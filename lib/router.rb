@@ -8,8 +8,11 @@ class Router
   end
 
   def perform
+    puts "\n"
     puts "Welcome to the gossip project"
-
+    puts "*" * 30
+    puts "\n"
+    
     while true
       puts "What do you want to do?"
       puts "1) add a gossip"

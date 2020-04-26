@@ -7,8 +7,10 @@ class View
     author = gets.chomp
     puts "Enter the gossip: " 
     content = gets.chomp
-    return params = { "content": content, "author": author }
+    return params = {"content": content, "author": author }
   end
+
+
 
 
   def index_gossips(gossips)
@@ -19,6 +21,14 @@ class View
     end
     puts '-' * 50
   end
+
+
+  def delete_gossip
+    print 'Enter the row number you want to delete: > '
+    index = gets.chomp
+  end
+
+
 
 
 end

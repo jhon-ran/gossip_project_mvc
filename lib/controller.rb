@@ -20,5 +20,10 @@ class Controller
   end
 
 
+  def delete_gossip
+    param = @view.delete_gossip
+    Gossip.delete_gossip(param.to_i)
+  end
+
 
 end
